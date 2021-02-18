@@ -23,6 +23,14 @@ class CocktailsController < ApplicationController
     # @dose = Dose.new
   end
 
+  def destroy
+
+  end
+
+  def update
+
+  end
+
   private
 
   def cocktail_params
