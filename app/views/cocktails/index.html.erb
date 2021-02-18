@@ -1,0 +1,26 @@
+<div class="container mt-3">
+  <h1>Cocktail inventory</h1>
+  <br>
+  <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-secondary" %>
+  <br>
+  <br>
+  <% @cocktails.each do |restaurant| %>
+  <table class="table table-dark">
+    <thead>
+    <tr>
+      <th scope="col">Cocktail</th>
+      <th scope="col">Dosis</th>
+      <th scope="col">Ingredients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%= link_to cocktail.name, cocktail_path(cocktail)%></th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>#TBD</td>
+  </tbody>
+  </table>
+  <% end %>
+</div>
