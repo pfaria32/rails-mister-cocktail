@@ -2,7 +2,6 @@
   <br>
   <br>
   <h3 class="text-center"><%=@cocktail.name.upcase%></h3>
-  <% link_to "Do it manually" new_cocktail_dose_path(cocktail) %>
 </div>
 
 <%= render "doses/forms_new", cocktail: @cocktail, dose: @dose %>
