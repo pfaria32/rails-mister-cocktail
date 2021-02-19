@@ -1,7 +1,14 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: blue;
+  height: 80px;
+  padding: 20px;
 }
+
+.navbar-container {
+  margin: 20 px;
+}
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
@@ -9,4 +16,35 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.nav ul {  /* for horizontal nav bar list */
+  list-style-type: none;
+  padding: 0;
+
+ }
+
+.nav li { /* to align list to the right */
+  float: right;
+  margin-right: 25px;
+  }
+
+.nav li a { /* change font size of active link bar */
+  font-size: 18px;
+}
+
+body{ /* body must be relative for navigation */
+  font-family: Arvo;
+  position: relative;
+}
+
+.nav .active a { /*change active background color */
+  background-color: white!important;
+}
+.navbar { /*change navbar background color */
+  background-color: lightblue;
+}
+
+.navbar-brand { /* change navbar brand size */
+  font-size: 25px;
 }

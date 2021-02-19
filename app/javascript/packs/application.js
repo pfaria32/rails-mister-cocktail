@@ -11,3 +11,5 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+$('body').scrollspy({target: ".navbar"})
