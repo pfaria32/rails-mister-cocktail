@@ -15,8 +15,13 @@ ingredients['drinks'].each do |ingredient|
 end
 
 20.times do
-  cocktail = Cocktail.create!(name: "#{Faker::Coffee.blend_name} #{Faker::GreekPhilodophers.name}")
-  rand(1..5).times do
+  cocktail = Cocktail.create!(name: Faker::Coffee.unique.blend_name)
+  rand(3..7).times do
+
+    possible_ingredient = Ingredient.all.sample
+
+    possible_ingredient = ingredient.all.sample while cocktail.ingredients. include?(possible_ingredient)
+
     Dose.create(
       cocktail: cocktail,
       ingredient: Ingredient.all.sample,

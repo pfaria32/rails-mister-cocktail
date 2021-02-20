@@ -2,7 +2,13 @@
   <br>
   <br>
   <h3 class="text-center"><%=@cocktail.name.upcase%></h3>
-</div>
+  <p><i class="fas fa-cocktail"></i></p>
 
-<%= render "doses/forms_new", cocktail: @cocktail, dose: @dose %>
+  <% @cocktail.doses.each do |dose|  %>
+  <ul>
+    <li><%=dose.ingredient.name%></li>
+  </ul>
+  <p><%= "#{dose.description}" %></p>
+  <% end %>
+
 
