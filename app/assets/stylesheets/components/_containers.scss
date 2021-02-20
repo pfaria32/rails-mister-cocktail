@@ -12,9 +12,36 @@
   text-align: center;
 }
 
+.top_text_container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  h1{
+    font-family: helvetica;
+  }
+
+}
+
+.index_text_container {
+  background-color: gray;
+  width: 500px;
+  height: 90px;
+  opacity: 0.7;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: center;
+}
+
 .index_cards_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+
