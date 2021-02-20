@@ -1,16 +1,16 @@
 <div id="index_background_container">
-  <div class="index_body_container">
-    <div class="top_text_container">
-      <div class="index_text_container"
-        <h1 id="title">COCKTAIL INVENTORY</h1>
+    <div class="index_body_container">
+      <div class="top_text_container">
+        <div class="index_text_container"
+          <h1 id="title">COCKTAIL INVENTORY</h1>
+        </div>
+      <br>
+      <br>
       </div>
-    </div>
-    <br>
-    <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-secondary" %>
-    <br>
-    <br>
-    <div class='index_cards_container'>
-      <% @cocktails.each do |cocktail| %>
+      <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-secondary" %>
+
+      <div class='index_cards_container'>
+        <% @cocktails.each do |cocktail| %>
         <div class="cards">
           <div class="property-image">
             <div class="property-image-title">
@@ -25,11 +25,14 @@
               <% end %>
             </ul>
           </div>
-              <div class="property-social-icons">
-                 <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-              </div>
+          <div class="property-social-icons">
+             <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
           </div>
-        <% end %>
+          </div>
+          <% end %>
         </div>
+      </div>
     </div>
+</div>
+
 
