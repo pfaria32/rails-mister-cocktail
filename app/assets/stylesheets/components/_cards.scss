@@ -1,0 +1,36 @@
+.cards {
+  height:18em;
+  width:14em;
+  margin-bottom: 15px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  2px 2px 2px #e1e1e3, -2px -2px 7px #ffffff;
+}
+
+.property-image
+{
+  height:6em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+  background-size:cover;
+}
+
+.property-description
+{
+  background-color: #FAFAFC;
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  padding: 0.5em 1em;
+  text-align:center;
+  opacity: 0.8;
+}
+
