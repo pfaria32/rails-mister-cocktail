@@ -1,16 +1,19 @@
-#index_background_container {
-  background: image-path('/images/background_splash.jpg');
-  background-size: cover;
-}
-
 .index_body_container {
+  background-color: transparent;
   margin-left: 90px;
   margin-right: 90px;
-  margin-top: 40px;
 }
 
 .index_cards_container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+#index_background_container {
+  margin : 0px;
+  height: 100%;
+  size: cover;
+  background-image: asset-url('background_splash');
+  background-size: 100%;
 }
