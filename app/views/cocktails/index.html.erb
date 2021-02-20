@@ -1,22 +1,22 @@
-<div class="container mt-3">
-  <h1>COCKTAIL INVENTORY</h1>
-  <br>
-  <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-secondary" %>
-  <br>
-  <br>
-  <div class="cards_container">
-  <% @cocktails.each do |cocktail| %>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail)%></h5>
-        <ul>
-          <% cocktail.ingredients.each do |ingredient| %>
-          <li><%=ingredient.name%></li>
-          <% end %>
-        </ul>
+ <div id="index_background_container">
+  <div class="index_body_container">
+    <h1>COCKTAIL INVENTORY</h1>
+    <br>
+    <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-secondary" %>
+    <br>
+    <br>
+    <div class="index_cards_container">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail)%></h5>
+          <ul>
+            <% cocktail.ingredients.each do |ingredient| %>
+            <li><%=ingredient.name%></li>
+            <% end %>
+          </ul>
+        </div>
       </div>
-    </div>
-    <% end %>
-    <div class="cards_container">
-
+      <% end %>
+  </div>
 </div>

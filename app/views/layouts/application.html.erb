@@ -13,15 +13,10 @@
   </head>
 
   <body>
-     <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" style="margin-left: 25px;" href="home">#home</a>
+        <%= link_to (image_tag ("pina_colada.png"), width: 60), cocktails_path, class: "logo_img" %>
       </div>
 
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -33,7 +28,6 @@
       </div>
     </div>
   </nav>
-    <div class="container mt-3">
     <%= yield %>
   </body>
 </html>
